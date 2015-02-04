@@ -1,0 +1,33 @@
+Everything worked as expected, not very good at designing UML Visio wasn't cooperating. 
+
+There is a requirment that you must enter atleast 4 as your records number, since there is 4 users installed. 
+1 Brandan supersecret Brandan Lasley 0 200 0 2
+2 Employee supersecret John Smith 0 0 0 1
+3 Customer supersecret Boo Bah 0 100 0 0
+
+Also another known issue and limitation is that nothing, I mean nothing can contain spaces.
+
+I should've done it with tabs but a little late for that now. 
+
+The only major problem I see is since I had to move the data into a private section of one class the code got a little bit messy and it needed some updates for its comments and a rename of the 'root' class to dbm (database manager). 
+
+I should've also put them in their own .cpp file and that would've solved the issue of the organization.
+
+The code is unoptimized and at its current state can be a bit hard to manage, but I personally believe its good enough to meet the standards.
+
+* The program works and compiles, only minor graphical errors exist (Ex. LOG).
+* Use classes to model all the struct/records. - The last assignment did that, so no change was made.
+* Draw a simple UML showing the classes and their relations - I attempted one. Couldn't figure out Visio.
+* Use Inheritance where it makes sense - I believe I did this, but I dont remember. 
+* You are required to encapsulate the data which means you have to put the data in private section of the class. The public functions should include common operations that you already had (like add item, delete items, display items etc.) - This was completed and caused lots of complications that were eventually resolved. 
+* The class should have at least one constructor to initialize the data. - All classes were merged into one super class to make this possible... well possible the way I wanted it to. 
+* You can use the arrays that you already had, but DYNAMICALLY ALLOCATE the arrays using ‘new’ and ‘delete’. -  On exit the program executes a programmed destructor. 
+* Pick a simple Linked List code from Learning Module or the textbook, and use it as a function to enhance your Banking Database so far. No need to rewrite the entire assignment. Just make minimal changes to use the linked list at least once. The goal is to be able to apply and use the Linked Link concept. Again, Not all arrays need to be replaced by a linked list. Just any one array, i.e. you need to use linked list once, so that you learn how to use it. - Oddly enough I couldn't think of a use without rewriting the program, so what I did was made a almost useless feature that shows the current users logged in. unfortunately only 1 users can be logged in at a time. So I also had the program delete the user from the link list before closing the program. Rather useless since it gets destroyed anyways but I had time. 
+
+
+The program should not have a memory leak, all 'new' statements are followed with a 'delete' statemnt. Any statement without the proper delete is nothing short of sabotage... or i'm an idiot. Either or. 
+
+As this term wraps we'll be parting ways... until you know. Next term when I have you for Computer Systems on DL. Although I wont get to see you each class.
+
+Thanks, 
+Brandan Lasley
